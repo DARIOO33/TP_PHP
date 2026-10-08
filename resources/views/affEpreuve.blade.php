@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-           <tbody>
+           
     @foreach ($epreuves as $epreuve)
         <tr>
             <td>{{ $epreuve->numepreuve }}</td>
@@ -23,6 +23,7 @@
         </tr>
     @endforeach
 </tbody>
-        </tbody>
     </table>
+
+    
 @endsection

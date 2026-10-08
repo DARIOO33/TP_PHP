@@ -68,3 +68,12 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+form {
+    margin-top: 24px;
+}
+
+form input,
+form button {
+    padding: 8px;
+}

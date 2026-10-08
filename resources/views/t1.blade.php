@@ -17,7 +17,9 @@
     <main>
         @yield('contenu')
     </main>
-    <footer>Atelier Framework Web Côté Serveur - TP N° 03</footer>
+
+
+    <footer>TP N03</footer>
 
     <script src="{{ asset('js/navigation.js') }}"></script>
 </body>
