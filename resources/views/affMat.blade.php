@@ -16,9 +16,9 @@
         <tbody>
             @foreach ($matieres as $matiere)
                 <tr>
-                    <td>{{ $matiere['code'] }}</td>
-                    <td>{{ $matiere['libelle'] }}</td>
-                    <td>{{ $matiere['coefficient'] }}</td>
+                    <td>{{ $matiere ->codemat }}</td>
+                    <td>{{ $matiere->libelle }}</td>
+                    <td>{{ $matiere->coef }}</td>
                 </tr>
             @endforeach
         </tbody>

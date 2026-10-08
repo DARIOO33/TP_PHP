@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\View\View;
-
+use Illuminate\Support\Facades\DB;
 class EpreuveController extends Controller
 {
     /**
@@ -11,10 +11,12 @@ class EpreuveController extends Controller
      */
     public function index(): View
     {
-        $epreuves = [
-            ['numero' => 1001, 'date' => '23/09/2019', 'lieu' => 110],
-            ['numero' => 1002, 'date' => '24/09/2019', 'lieu' => 112],
-        ];
+        // Methode SQL brut
+        // $epreuves = DB::select("select * from epreuves");
+        
+        
+        // Methode Le générateur de requête fluide
+        $epreuves = DB::table("matieres")->get();
 
         return view('affEpreuve')->with('epreuves', $epreuves);
     }
